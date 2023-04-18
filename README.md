@@ -13,7 +13,11 @@ Deve exibir a seguinte mensagem: "Hello, world from nginx v3-v4-v5!"
 
 COMO RESOLVER A QUESTÃO:
 
-Projeto no openshift já existe
+
+Projeto no openshift já existe. Para criar:
+
+oc new-project layers-size
+oc new-app --name=web-app https://github.com/leandroppereira/desafio2
 
 necessário customizar o Dockerfile para cortar instruções desnecessárias e dimuir o número de camadas.
 
