@@ -14,6 +14,6 @@ RUN chgrp -R 0 /var/log/nginx /run/nginx.pid
 RUN chmod -R g+rwx /var/log/nginx /run/nginx.pid
   
 EXPOSE 8080
-USER 1001
+USER 1000
 
 CMD nginx -g "daemon off;"
